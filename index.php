@@ -9,6 +9,7 @@
 	<body>
 		<div class="container text-center">
 			<img src="images/logo.png" />
+			<h1>Auto Geployment</h1>
 		</div>
 	</body>
 </html>
