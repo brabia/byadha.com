@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="container text-center">
-			<img src="logo.png" />
+			<img src="images/logo.png" />
 		</div>
 	</body>
 </html>
