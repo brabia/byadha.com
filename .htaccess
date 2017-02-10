@@ -1,0 +1,18 @@
+#
+	# ------------------------------------------------------
+	#	Norfolky
+	# ------------------------------------------------------  
+#
+
+#	Protection
+	AuthUserFile /var/www/byadha.com/public_html/.htpasswd
+	AuthType Basic
+	AuthName "Daily WwebMag Private Space"
+	Require valid-user
+#Force www:
+	RewriteCond %{HTTP_HOST} !^www. [NC]
+	RewriteCond %{HTTP_HOST} ^(.+)$ [NC]
+	RewriteRule ^(.*)$ http://www\.%1/$1 [R=301,L]
+	#	RewriteRule \.(gif|jpg)$ - [F]
+#Disable directory Listing:
+	Options -Indexes   
